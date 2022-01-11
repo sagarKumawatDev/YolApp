@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8ffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.timeline.CreateTimeLineActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/layer_632" />
+
+    <RelativeLayout
+        android:id="@+id/toolbarCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iconBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iconBack"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="@dimen/_15sdp"
+            android:text="Create Timeline"
+            android:textColor="@color/white"
+            android:textSize="16.3sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarCard">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:paddingVertical="@dimen/_12sdp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true">
+
+                t<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/profileImageCard"
+                        android:layout_width="78dp"
+                        android:layout_height="78dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="28dp"
+                        app:cardBackgroundColor="#e9e9e9"
+                        app:cardCornerRadius="@dimen/_40sdp">
+
+                        <ImageView
+                            android:id="@+id/profileImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/profile_copy" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/profileImageCard"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:letterSpacing="0.03"
+                            android:textColor="#454545"
+                            android:textSize="16.7sp"
+                            android:textStyle="normal" />
+<!--
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@color/grey_light"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layoutDirection="rtl"
+                            android:letterSpacing="0.03"
+
+                            android:text="@string/public_text"
+                            android:textColor="#9a9a9a"
+                            android:textSize="13.3sp"
+                            android:textStyle="normal" />-->
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingVertical="22dp"
+                    android:paddingStart="22dp"
+                    android:paddingEnd="22dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:letterSpacing="0.03"
+                        android:text="Select Zone"
+                        android:visibility="gone"
+                        android:textColor="#454545"
+                        android:textSize="13.3sp"
+                        android:textStyle="normal" />
+
+                    <RadioGroup
+                        android:id="@+id/radioButtonGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/public_private_round_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/public_bt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:letterSpacing="0.03"
+                            android:text="@string/public_text"
+                            android:textColor="#949494"
+                            android:textSize="13.3sp"
+                            android:textStyle="normal" />
+
+                        <RadioButton
+                            android:id="@+id/private_bt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_40sdp"
+                            android:checked="true"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:letterSpacing="0.03"
+                            android:text="@string/private_text"
+                            android:textColor="#949494"
+                            android:textSize="13.3sp"
+                            android:textStyle="normal" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:letterSpacing="0.03"
+                        android:text="Update Life"
+                        android:textColor="#454545"
+                        android:textSize="13.3sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/filled_round_shape_for_input_box"
+                        android:fontFamily="@font/montserrat"
+                        android:letterSpacing="0.03"
+                        android:minHeight="84dp"
+                        android:paddingStart="20dp"
+                        android:textColor="#919191"
+                        android:textSize="13.3sp"
+                        android:textStyle="normal"
+                        tools:text="What’s on your mind?" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="174.3dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/browseFile"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/iconPicker"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        app:cardCornerRadius="25dp">
+
+                        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:letterSpacing="0.03"
+                            android:text="Browse File"
+                            android:textColor="#454545"
+                            android:textSize="13.3sp"
+                            android:textStyle="normal" />
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/iconPicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY" />
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@android:id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/checkbox_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:letterSpacing="0.03"
+                    android:text="Use this as your default picture on the zone
+                    title"
+                    android:textColor="#454545"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/btn_back">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:text="@string/post"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17sdp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:theme="@style/progressBarWhite"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+</RelativeLayout>

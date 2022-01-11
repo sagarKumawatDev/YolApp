@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="blue_bar_height">50dp</dimen>
+    <dimen name="bottom_blue_button_height">50dp</dimen>
+    <dimen name="labour_cell_width">132dp</dimen>
+    <dimen name="labour_cell_height">140dp</dimen>
+    <dimen name="labour_cell_img">50dp</dimen>
+    <item name="labour_text_size" format="float" type="dimen">12.8</item>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

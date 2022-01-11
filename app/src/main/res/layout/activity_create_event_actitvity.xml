@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#f8ffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.event.CreateEventActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/layer_632" />
+
+    <RelativeLayout
+        android:id="@+id/toolbarCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iconBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iconBack"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="@dimen/_15sdp"
+            android:text="Create Event"
+            android:textColor="@color/white"
+            android:textSize="16.3sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarCard">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_12sdp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/profileImageCard"
+                        android:layout_width="78dp"
+                        android:layout_height="78dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="28dp"
+                        app:cardBackgroundColor="#e9e9e9"
+                        app:cardCornerRadius="@dimen/_40sdp">
+
+                        <ImageView
+                            android:id="@+id/profileImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/profile_copy" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/profileImageCard"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:letterSpacing="0.03"
+                            android:textColor="#454545"
+                            android:textSize="16.7sp"
+                            android:textStyle="normal" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layoutDirection="rtl"
+                            android:letterSpacing="0.03"
+                            android:text="@string/private_text"
+                            android:textColor="#9a9a9a"
+                            android:textSize="13.3sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingVertical="22dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:letterSpacing="0.03"
+                        android:text="@string/create"
+                        android:textColor="#d56262"
+                        android:textSize="11sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/eventName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round_shape_for_input_box"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:hint="@string/name_of_the_event"
+                        android:letterSpacing="0.03"
+                        android:padding="@dimen/_11sdp"
+                        android:singleLine="true"
+                        android:textColor="#a4a4a4"
+                        android:textSize="13.3sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/startDateAndTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round_shape_for_input_box"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:hint="@string/start_time_and_date"
+                        android:letterSpacing="0.03"
+                        android:padding="@dimen/_11sdp"
+                        android:singleLine="true"
+                        android:textColor="#a4a4a4"
+                        android:textSize="13.3sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/endDateAndTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/filled_round_shape_for_input_box"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:hint="@string/end_time_and_date"
+                        android:letterSpacing="0.03"
+                        android:padding="@dimen/_11sdp"
+                        android:singleLine="true"
+                        android:textColor="#a4a4a4"
+                        android:textSize="13.3sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+
+                        android:id="@+id/eventLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round_shape_for_input_box"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:hint="@string/location"
+                        android:letterSpacing="0.03"
+                        android:padding="@dimen/_11sdp"
+                        android:singleLine="true"
+                        android:textColor="#a4a4a4"
+                        android:textSize="13.3sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingVertical="22dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:letterSpacing="0.03"
+                        android:text="@string/age"
+                        android:textColor="#d56262"
+                        android:textSize="11sp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:paddingHorizontal="20dp">
+
+                        <EditText
+                            android:id="@+id/eventMinAge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_shape_for_input_box"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center"
+                            android:hint="@string/minimum_age"
+                            android:inputType="number"
+                            android:letterSpacing="0.03"
+                            android:padding="@dimen/_11sdp"
+                            android:singleLine="true"
+                            android:textColor="#a4a4a4"
+                            android:textSize="13.3sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/eventMaxAge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/filled_round_shape_for_input_box"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center"
+                            android:hint="@string/maximum_age"
+                            android:inputType="number"
+                            android:letterSpacing="0.03"
+                            android:padding="@dimen/_11sdp"
+                            android:singleLine="true"
+                            android:textColor="#a4a4a4"
+                            android:textSize="13.3sp"
+                            android:textStyle="normal" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingVertical="22dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:paddingHorizontal="20dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:letterSpacing="0.03"
+                                android:text="@string/gender"
+                                android:textColor="#d56262"
+                                android:textSize="11sp"
+                                android:textStyle="normal" />
+
+                            <!--Create a TextInputLayout and choose the style,
+        for now we are choosing the OutlinedBox ExposedDropdownMenu   -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:boxCornerRadiusBottomEnd="10dp"
+                                app:boxCornerRadiusBottomStart="10dp"
+                                app:boxCornerRadiusTopEnd="10dp"
+                                app:boxCornerRadiusTopStart="10dp"
+                                app:boxStrokeColor="#b7b7b7"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <!-- Inside text input layout add
+                                      an auto complete text view
+                                        and make its input type to none-->
+                                <AutoCompleteTextView
+                                    android:id="@+id/autoCompleteTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:inputType="none"
+                                    android:text="Gender" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:letterSpacing="0.03"
+                                android:text="@string/distance_from_event_in_kms"
+                                android:textColor="#d56262"
+                                android:textSize="11sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/eventDistance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_shape_for_input_box"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:gravity="center"
+                                android:hint="0.5 Km - 5.0 Km"
+                                android:letterSpacing="0.03"
+                                android:padding="@dimen/_11sdp"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="#a4a4a4"
+                                android:textSize="13.3sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:id="@+id/rlCreateEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/btn_back">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:text="@string/create_event"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17sdp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:theme="@style/progressBarWhite"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <fragment
+                android:id="@+id/autocomplete_fragment"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+</RelativeLayout>

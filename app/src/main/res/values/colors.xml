@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#404040</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="blue_main">#C86638</color>
+    <color name="brown_main">#C86638</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="unselected_text">#454545</color>
+    <color name="grey">#818181</color>
+    <color name="grey_login">#D7D7D7</color>
+    <color name="grey_light">#ededed</color>
+    <color name="black_light_txt">#454545</color>
+    <color name="bar_green">#16B73B</color>
+    <color name="bar_brown">#B76316</color>
+    <color name="bar_blue">#1ba7b8</color>
+    <color name="bar_blue_list">#188cb7</color>
+    <color name="bar_green_light">#9fb718</color>
+    <color name="bar_yellow">#dcb000</color>
+    <color name="txt_red">#ff4242</color>
+    <color name="bar_navy_blue">#56488b</color>
+    <color name="reschedule_green">#00D0DD</color>
+
+    <color name="unselected_day_tab">#828282</color>
+    <color name="input_text">#5753c2</color>
+
+    <color name="light_white">#F4F4F4</color>
+
+
+    <color name="colorBlack">#7a7a7a</color>
+    <color name="colorDulBlack">#282828</color>
+    <color name="colorPurple">#5753C2</color>
+    <color name="colorGreen">#68bd01</color>
+    <color name="colorRed">#d56262</color>
+    <color name="colorGrey">#707070</color>
+    <color name="colorDarkGrey">#353535</color>
+    <color name="colorLightGrey">#F0F0F0</color>
+    <color name="seme_transparent">#95000000</color>
+    <color name="trans_black">#88000000</color>
+    <color name="image_transparent">#7E000000</color>
+    <color name="blur_image_transparent">#59000000</color>
+    <color name="colorPink">#ce158c</color>
+    <color name="tr_transparent">#7E000000</color>
+    <color name="prog_transparent">#00000000</color>
+    <color name="colorPurpleNew">#8C3E89</color>
+    <color name="bgColor">#EAF2F9</color>
+    <color name="text_black">#454545</color>
+    <color name="text_different_black">#161616</color>
+    <color name="stroke_color">#4d4d4d</color>
+    <color name="transparent_grey">#30000000</color>
+    <color name="light_white_grey">#7b7b7b</color>
+    <color name="light_red">#d56262</color>
+    <color name="text_color">#454545</color>
+    <color name="card_text_color">#949494</color>
+    <color name="light_black">#454545</color>
+    <color name="transparent_color">#00FFFFFF</color>
+    <color name="textColor">#454545</color>
+
+</resources>

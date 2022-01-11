@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "635643025732",
+    "firebase_url": "https://hapiness-c4bb5.firebaseio.com",
+    "project_id": "hapiness-c4bb5",
+    "storage_bucket": "hapiness-c4bb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635643025732:android:ea0b43645c3b417b479f11",
+        "android_client_info": {
+          "package_name": "com.hapiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635643025732-p961pvgmscauhai88ddi22crborcmqiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKTxZCE8nLAQKMdnt6Yao5RQ4s6TwQVxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635643025732-km57c5pgfasr28v0641s3jjqe6ngh20v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "635643025732-24qhfpmhl2gpa1r4vpsdqta9b7t33gvn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Hapiness"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635643025732:android:4f45498984f898c3479f11",
+        "android_client_info": {
+          "package_name": "com.yol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635643025732-p961pvgmscauhai88ddi22crborcmqiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKTxZCE8nLAQKMdnt6Yao5RQ4s6TwQVxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635643025732-km57c5pgfasr28v0641s3jjqe6ngh20v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "635643025732-24qhfpmhl2gpa1r4vpsdqta9b7t33gvn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Hapiness"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

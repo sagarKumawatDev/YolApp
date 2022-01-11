@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/layer_632" />
+
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:drawableStart="@drawable/ic_baseline_logout_24"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="@string/logout"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:gravity="left"
+        android:letterSpacing="0.05"
+        android:padding="15dp"
+        android:text="Choose How Your days are?"
+        android:textColor="#fefefe"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <include
+        layout="@layout/forecast_layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:visibility="gone" />
+
+
+    <include
+        android:id="@+id/image"
+        layout="@layout/forecast_layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/foreCast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="20dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userMessages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:paddingHorizontal="30dp"
+                android:text="if you dont respond to those\n two questions by 11 am,\n you missed the bus my friend"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/clapper_board"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/clapper_board"
+                    android:visibility="gone" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/captureIcon"
+                    android:layout_width="116dp"
+                    android:layout_height="105dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/vector_smart_object"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.584" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/createdTimeLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="35dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="31dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.584">
+
+                    <RelativeLayout
+                        android:id="@+id/addEventLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:paddingStart="10dp"
+                            android:src="@drawable/profile" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="@string/create_new_post"
+                            android:textColor="#454545"
+                            android:textSize="16.3sp" />
+
+                        <ImageView
+                            android:layout_width="19dp"
+                            android:layout_height="19dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="50dp"
+                            android:src="@drawable/additional" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/selfieTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="42.2sp"
+                    android:text="Start your day with Selfie"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/captureIcon"
+                    app:layout_constraintStart_toStartOf="@+id/captureIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/captureIcon" />
+
+
+                <View
+                    android:id="@+id/today"
+                    android:layout_width="104dp"
+                    android:layout_height="36dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.885"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <View
+                    android:id="@+id/yesterday"
+                    android:layout_width="127dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="40dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/today"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/today"
+                    app:layout_constraintTop_toBottomOf="@+id/today" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlFocecast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top"
+                android:layout_centerInParent="true"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/labeled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:letterSpacing="0.05"
+                    android:paddingHorizontal="30dp"
+                    android:paddingTop="23.3dp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="Your Focecast"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labeled"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center|end"
+                            android:letterSpacing="0.05"
+                            android:text="Your focecast today :-"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/todayFocecast"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:letterSpacing="0.05"
+                            android:paddingHorizontal="30dp"
+                            android:text="Missed"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center|end"
+                            android:letterSpacing="0.05"
+                            android:text="Your Yesterday was:-"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/yesterdayFocecast"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:letterSpacing="0.05"
+                            android:text="Missed"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:letterSpacing="0.03"
+                    android:padding="5dp"
+                    android:text="@string/check_your"
+                    android:textColor="@color/text_color"
+                    android:textSize="13.3sp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:id="@+id/rlMind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:id="@+id/mindShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/go_btn_back"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:letterSpacing="0.03"
+                        android:padding="@dimen/_12sdp"
+                        android:text="@string/mindshare"
+                        android:textColor="#ffffff"
+                        android:textSize="13.3sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/mindMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/go_btn_back"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center"
+                        android:letterSpacing="0.03"
+                        android:padding="@dimen/_12sdp"
+                        android:text="@string/mindmap"
+                        android:textColor="#ffffff"
+                        android:textSize="13.3sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

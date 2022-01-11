@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Yol</string>
+    <string name="please_sign_in_to_continue">Please Sign in to continue</string>
+    <string name="join_as">Join AS</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="company_name">Company Name</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="date">Date Of Birth/Date Of Registration</string>
+    <string name="male">Male</string>
+    <string name="other">Other</string>
+    <string name="female">Female</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Enter Email ID</string>
+    <string name="timeline">Timeline</string>
+    <string name="home">Home</string>
+    <string name="stream">Stream</string>
+    <string name="login">Login</string>
+    <string name="what_s_your_name">Student/Contact Person Name</string>
+    <string name="sign_in">Register</string>
+    <string name="institute">College/Institute</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="new_password">New Password</string>
+    <string name="permission_rationale_title">We need this permission</string>
+    <string name="permission_rationale_message">This permission is needed for doing some fancy stuff so please, allow it!</string>
+    <string name="facebook_app_id">303025205056873</string>
+    <string name="fb_login_protocol_scheme">fb303025205056873</string>
+    <string name="default_web_client_id_app">635643025732-p961pvgmscauhai88ddi22crborcmqiu.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="event">Event</string>
+    <string name="create_a_new_event">Create a new Event</string>
+    <string name="share">Share</string>
+    <string name="title_activity_create_event_actitvity">CreateEventActitvity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="name_of_the_event">Name of the Event ?</string>
+    <string name="start_time_and_date">Start Time and Date</string>
+    <string name="end_time_and_date">End Time and Date</string>
+    <string name="location">Location</string>
+    <string name="minimum_age">Minimum Age</string>
+    <string name="maximum_age">Maximum Age</string>
+    <string name="gender">Gender</string>
+    <string name="distance_from_event_in_kms">Distance event(Kms)</string>
+    <string name="distance">Distance</string>
+    <string name="create_event">Create Event</string>
+    <string name="distance_from_event_location">Distance from Event location :</string>
+    <string name="outings">Outings</string>
+    <string name="create">Create</string>
+    <string name="age">Age</string>
+    <string name="public_text">Public</string>
+    <string name="private_text">Private</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="maybe">Maybe</string>
+    <string name="to">To</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+    <string name="all">All</string>
+    <string name="my_posts">My Posts</string>
+    <string name="create_new_post">Create new Post</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s</string>
+    <string name="likes">Likes</string>
+    <string name="comments">Comments</string>
+    <string name="post">Post</string>
+
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_photo">Add Photo!</string>
+    <string name="terms_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="gender_type">Gender/Type</string>
+    <string name="google_maps_key">AIzaSyBIgCFH3APf22bXpaoqzijUY6aFHKGHqGs</string>
+    <string name="logout">Logout</string>
+    <string name="done">Done</string>
+    <string name="enter_tribe">enter tribe</string>
+    <string name="select_tribes">Select Tribes</string>
+    <string name="registration_type">Registration Type</string>
+    <string name="check_your">Check your</string>
+    <string name="select_tribes_groups_that_you_wont_to_join_n_min_1_max_5">Select Tribes (Groups) that you wont to join\n (min. 1 - max. 5)</string>
+
+    <string name="mindshare">MINDSHARE</string>
+    <string name="mindmap">MINDMAP</string>
+
+    <string-array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="gender_list_and_type">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>University/Institute/College</item>
+    </string-array>
+
+    <string-array name="registration_type_list">
+        <item>Student</item>
+        <item>University/Institute/College</item>
+        <item>Individual</item>
+    </string-array>
+
+</resources>
